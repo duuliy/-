@@ -1,0 +1,4 @@
+/* pages/aboutme/about.wxss */
+image{
+  height: 500px;
+}

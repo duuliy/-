@@ -1,0 +1,6 @@
+<!--pages/aboutme/about.wxml-->
+<text>扫一扫得大奖</text>
+
+<view >
+<image src='../../images/555.jpg'></image>
+</view>

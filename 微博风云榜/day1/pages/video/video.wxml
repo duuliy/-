@@ -1,0 +1,7 @@
+<!--pages/video/video.wxml-->
+
+  <!-- 内容 -->
+<view wx:for="{{listdata}}" wx:for-index="idx" wx:for-item="itemName"  class='contain'>
+<video src='{{itemName.video_uri}}' controls class='videoo'></video>
+
+</view>

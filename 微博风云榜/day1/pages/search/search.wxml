@@ -1,0 +1,22 @@
+ <!--index.wxml-->
+
+<view class='zx'>
+ 
+  <view class="sectionw">
+  <input placeholder="搜索博主" style='width:275px' name='userName' bindinput ="userNameInput" auto-focus/>
+  </view>
+  <!-- //下拉框 -->
+  <view class="usermotto">
+    <text class="user-motto" bindtap="simulation">{{motto}}</text>
+  </view>
+
+<!-- 内容 -->
+  <view wx:for="{{listdata}}" wx:for-index="idx" wx:for-item="itemName" data-uurl='{{itemName.url}}'  bindtap='changeurl' class='contain'>
+ <view class='left'><image src='{{itemName.img}}'></image></view>
+ <view class='right'>
+  <view class='one'>{{itemName.name}}<text>No{{idx+1}}</text></view>
+  <view class='list two'>{{itemName.desc}}</view>
+  <view class='list three'>{{itemName.newinfo}}</view>
+ </view>
+</view>
+</view>
